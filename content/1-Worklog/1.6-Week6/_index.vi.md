@@ -5,54 +5,32 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 6:
+### Mục tiêu Tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Củng cố kiến thức bảo mật AWS: Shared Responsibility Model, AWS Identity Center và quản lý khóa (KMS).
+- Nâng cao kỹ năng thiết kế và trực quan hóa kiến trúc đám mây (sử dụng Draw.io với AWS icons).
+- Hiểu sâu các mô hình Attention trong NLP: Seq2Seq, NMT và các chỉ số đánh giá mô hình.
+- Phối hợp cùng nhóm để hoàn thiện sơ đồ kiến trúc tổng quan cho dự án.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Thực hành vẽ sơ đồ kiến trúc bằng Draw.io với bộ icon AWS <br> - Hoàn thành lab Module05-44 và Module05-48                                                                                            | 13/10/2025   | 13/10/2025      |  <https://www.youtube.com/@AWSStudyGroup/>
+| 3   | - Nghiên cứu Shared Responsibility Model và các dịch vụ quản lý danh tính (IAM, Cognito, Identity Center) <br> - Làm quen với KMS và Security Hub <br> - Ôn tập và thực hành các kiến thức đã học trong ngày | 14/10/2025   | 14/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
+| 4   | - Họp nhóm để chốt sơ đồ kiến trúc tổng quan <br> - Nghiên cứu Seq2Seq và cơ chế Attention (Queries/Keys/Values) <br> - Tìm hiểu NMT, BLEU/ROUGE và các kỹ thuật như Beam Search | 15/10/2025   | 15/10/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/>
+| 5   | - Hoàn thiện và chỉnh sửa sơ đồ kiến trúc AWS theo phản hồi                                                                 | 16/10/2025   | 16/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
+| 6   | - Ôn tập lại nội dung đã học, tiếp thu phản hồi và hoàn thiện sơ đồ kiến trúc cùng nhóm                                                                                         | 17/10/2025   | 17/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
 
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thành tựu Tuần 6:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Bảo mật đám mây: nắm vững Shared Responsibility Model, cấu hình IAM/Identity Center và làm quen với KMS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Thiết kế kiến trúc: sử dụng Draw.io để phác thảo HLA, tiếp nhận và áp dụng phản hồi từ nhóm.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- NLP nâng cao: hiểu Seq2Seq và Attention; thực hành đánh giá mô hình bằng BLEU/ROUGE và các kỹ thuật như Beam Search.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Hợp tác nhóm: chốt tầm nhìn hệ thống và hoàn thiện sơ đồ kiến trúc dự án.
 

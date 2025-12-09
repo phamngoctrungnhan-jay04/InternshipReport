@@ -3,7 +3,7 @@ title : "Truy cập S3 từ môi trường truyền thống"
 date :  "2025-11-05" 
 weight : 4 
 chapter : false
-pre : " <b> 5.4. </b> "
+pre : " <b> 5.4 </b> "
 ---
 
 #### Tổng quan

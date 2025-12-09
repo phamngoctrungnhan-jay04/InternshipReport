@@ -5,53 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Finalize the System Architecture and integrate the AI module into the main project.
+* Complete the core development phase: Basic Frontend, Backend, and Project Proposal.
+* Comprehensive review of all AWS modules and supplementary knowledge covered to date.
+* Successfully complete the **Midterm Exam**.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks carried out this week:
+| Day | Task                                                                                                                                                                                                                                | Start Date | End Date   | Resources                                   |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ------------------------------------------- |
+| Mon | - Revised the architecture diagram and refined service choices <br> - Finalized the AI component and began integration with the application                                                                                                     | 27/10/2025 | 27/10/2025 |                                             |
+| Tue | - Drafted the Project Proposal <br> - Held team collaboration sessions <br> - Implemented the basic front-end and back-end components                                                                                                                         | 28/10/2025 | 28/10/2025 |                                             |
+| Wed | - Conducted a thorough review of accumulated knowledge and supplemental materials                                                                                                                                                 | 29/10/2025 | 29/10/2025 | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://cloudjourney.awsstudygroup.com/> |
+| Thu | - Continued knowledge consolidation and review of supplementary resources                                                                                                                                                 | 30/10/2025 | 30/10/2025 | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://cloudjourney.awsstudygroup.com/> |
+| Fri | - Took the Midterm Exam <br> - Held a meeting to adjust and prioritize project features                                                                                                                                                            | 31/10/2025 | 31/10/2025 |                                             |
 
 
-### Week 8 Achievements:
+### Week 8 Achievements: 
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+[Image of full stack development workflow]
 
-* Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* System integration and optimization:
+  - Integrated the AI chatbot into the main application stack.
+  - Refined the AWS architecture to better match implementation constraints.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Development progress:
+  - Implemented core front-end and back-end components.
+  - Completed and documented the Project Proposal.
 
-* Used AWS CLI to perform basic operations such as:
+* Knowledge consolidation and evaluation:
+  - Reviewed core AWS modules and supplementary materials.
+  - Successfully completed the Midterm Exam.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Iterative improvements:
+  - Prioritized and adjusted features following team discussions and test feedback.

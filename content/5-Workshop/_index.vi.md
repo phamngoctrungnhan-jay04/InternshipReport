@@ -3,7 +3,7 @@ title: "Workshop"
 date: "2025-11-05"
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: " <b> 5 </b> "
 ---
 
 {{% notice warning %}}

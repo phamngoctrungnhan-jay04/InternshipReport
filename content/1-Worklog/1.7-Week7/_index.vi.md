@@ -5,55 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 7:
+### Mục tiêu Tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Làm chủ hệ cơ sở dữ liệu AWS: RDS, Aurora, Redshift và ElastiCache.
+- Triển khai ứng dụng AI thực tế: nghiên cứu và tạo prototype AI Chatbot.
+- Hoàn thiện sơ đồ kiến trúc tổng quan theo phản hồi người hướng dẫn.
+- Bắt đầu giai đoạn triển khai dự án cuối kỳ (thiết kế frontend và backend).
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Thực hiện lab Module06 và tiếp tục tinh chỉnh sơ đồ kiến trúc                                                                                             | 20/10/2025   | 20/10/2025      |  <https://www.youtube.com/@AWSStudyGroup/>
+| 3   | - Nghiên cứu các khái niệm Database và dịch vụ RDS/Aurora/Redshift/ElastiCache <br> - Tìm hiểu quy trình tạo AI Chatbot | 21/10/2025   | 21/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
+| 4   | - Triển khai prototype chatbot AI và tinh chỉnh theo phản hồi <br> - Cập nhật sơ đồ kiến trúc theo review của nhóm  | 22/10/2025   | 22/10/2025      | <https://www.youtube.com/>
+| 5   | - Bắt đầu xây dựng dự án cuối kỳ: thiết kế và triển khai các thành phần Frontend & Backend | 23/10/2025   | 23/10/2025      |  |
+| 6   | - Ôn tập kiến thức tuần, tiếp thu góp ý và chạy kiểm thử cho AI; hoàn thiện các phần Frontend/Backend                                                                                         | 24/10/2025   | 24/10/2025      |  |
 
 
-### Kết quả đạt được tuần 7:
+### Thành tựu Tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hiểu rõ hệ sinh thái cơ sở dữ liệu AWS: phân biệt RDS/Aurora và Redshift; áp dụng ElastiCache cho caching.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Prototype AI: xây dựng mẫu chatbot chức năng và tích hợp logic AI vào dự án.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hoàn thiện kiến trúc: cập nhật và chốt sơ đồ hệ thống sau các vòng review.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Khởi động triển khai dự án: bắt đầu giai đoạn coding và hoàn thiện thiết kế ban đầu cho frontend/backend.
 
 

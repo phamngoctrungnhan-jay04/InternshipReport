@@ -5,53 +5,42 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master AWS Security fundamentals: Shared Responsibility Model, Identity Center, and Key Management.
+* Develop skills in designing and visualizing Cloud Architecture using professional standards (Draw.io).
+* Deep dive into NLP Attention Models: Seq2seq, Neural Machine Translation (NMT), and Evaluation metrics.
+* Collaborate with the team to draft and refine the High-Level Architecture for the final project.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks executed this week:
+| Day | Task                                                                                                                                                                                                                                                                                                                           | Start Date | End Date   | Resources                                   |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------- | ------------------------------------------- |
+| Mon | - Practiced creating AWS architecture diagrams using Draw.io with AWS icon sets <br> - Completed Lab modules 05-44 and 05-48                                                                                                                                                         | 13/10/2025 | 13/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>
+| Tue | - Studied the Shared Responsibility Model and AWS identity services: IAM, Cognito, Organizations, and Identity Center <br> - Reviewed KMS and Security Hub; supplemented learning with hands-on practice                                                                 | 14/10/2025 | 14/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>   |
+| Wed | - Conducted a design meeting to produce a high-level architecture diagram <br> - Studied Seq2Seq architectures and attention mechanisms (queries, keys, values) <br> - Reviewed NMT concepts and evaluation metrics (BLEU, ROUGE-N) and decoding techniques such as Beam Search and Minimum Bayes Risk | 15/10/2025 | 15/10/2025 | <https://www.coursera.org/learn/attention-models-in-nlp/>
+| Thu | - Refined AWS architecture diagramming skills and iteratively edited diagrams based on feedback                                                                                                                                                                                                                                | 16/10/2025 | 16/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>   |
+| Fri | - Reviewed and consolidated weekly knowledge <br> - Iterated on the architecture diagram incorporating mentor feedback <br> - Held a team discussion to agree on the diagram's final structure                                                                                                                    | 17/10/2025 | 17/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>   |
 
 
-### Week 6 Achievements:
+### Week 6 Achievements: 
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Security and identity:
+  * Clarified the Shared Responsibility Model.
+  * Configured IAM and AWS Identity Center for administrative tasks.
+  * Investigated Cognito for application authentication and evaluated KMS for key management.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Architecture design:
+  * Became proficient with Draw.io and AWS iconography.
+  * Drafted and iterated on the project's high-level architecture diagram.
+  * Incorporated mentor feedback into subsequent revisions.
 
-* Used AWS CLI to perform basic operations such as:
+* Advanced NLP topics:
+  * Studied Seq2Seq and attention mechanisms, focusing on queries, keys, and values.
+  * Reviewed model evaluation metrics (BLEU, ROUGE-N) and decoding strategies like Beam Search.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Team coordination:
+  * Aligned team members on architectural direction through focused design meetings.

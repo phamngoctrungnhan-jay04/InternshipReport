@@ -5,55 +5,45 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 4:
+### Mục tiêu Tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững quy trình Hybrid Cloud: Nhập/Xuất Máy ảo (VMs) và tích hợp lưu trữ tại chỗ (On-premises).
+* Đào sâu kiến thức về AWS Storage (EFS, FSx, Storage Gateway) và Compute (Autoscaling, Lightsail).
+* Xây dựng nền tảng toán học cho Xử lý ngôn ngữ tự nhiên (NLP): Không gian Vector, Xác suất và Đại số tuyến tính.
+* Chốt ý tưởng dự án cuối kỳ và thiết lập khung tài liệu sử dụng Hugo.
 
-### Các công việc cần triển khai trong tuần này:
+### Các nhiệm vụ đã thực hiện trong tuần:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Nghiên cứu EC2 Auto Scaling, EFS/FSx và Lightsail <br> - Củng cố các khái niệm lưu trữ và tính toán cơ bản <br> - Ôn tập xác suất và Định lý Bayes                                                                                             | 29/09/2025   | 29/09/2025      | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/>
+| 3   | - Mở rộng hiểu biết về dịch vụ cơ sở dữ liệu và bảo mật trên AWS <br> - Thực hành quy trình xuất/nhập VM bằng VMware Workstation và công cụ AWS                                                                                                                     | 30/09/2025   | 30/09/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
+| 4   | - Thực hành đại số tuyến tính bằng Python/NumPy <br> - Cài đặt tính toán Euclidean distance và cosine similarity <br> - Khám phá thao tác vector từ và các bài lab Vector Space Model                                                           | 01/10/2025   | 01/10/2025      | <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/>
+| 5   | - Nhập VM vào AWS và khởi chạy instance từ AMI <br> - Cấu hình ACL cho bucket S3 và xuất ảnh VM khi cần <br> - Triển khai Storage Gateway và mount chia sẻ file trên hệ thống on-premises <br> - Dọn dẹp các tài nguyên tạm thời trên AWS | 02/10/2025   | 02/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
+| 6   | - Nghiên cứu theme Hugo và những thực hành viết tài liệu tốt <br> - Lên cấu trúc báo cáo cuối kỳ <br> - Họp nhóm để thống nhất ý tưởng và khung báo cáo                                                                                        | 03/10/2025   | 03/10/2025      | <https://www.youtube.com/@AWSStudyGroup/> |
 
 
-### Kết quả đạt được tuần 4:
+### Thành tựu Tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Triển khai Hybrid cloud:
+  - Xuất VM từ VMware Workstation cục bộ rồi tải lên AWS.
+  - Tạo AMI từ VM và khởi chạy instance hoạt động.
+  - Chứng minh khả năng di chuyển instance giữa môi trường cloud và local.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Cấu hình giải pháp lưu trữ nâng cao:
+  - Triển khai và kiểm thử AWS Storage Gateway.
+  - Mount chia sẻ file từ cloud lên máy on-premises.
+  - Quản lý ACL S3 để bảo đảm quyền truy cập.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Ứng dụng toán học cho NLP:
+  - Sử dụng Python/NumPy cho các phép toán đại số tuyến tính.
+  - Áp dụng Euclidean distance và cosine similarity cho vector văn bản.
+  - Ôn tập Định lý Bayes và mô hình không gian vector.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Chuẩn bị tài liệu & dự án:
+  - Lựa chọn và cấu hình theme Hugo cho báo cáo.
+  - Hoàn thiện ý tưởng dự án cùng nhóm.
 
 

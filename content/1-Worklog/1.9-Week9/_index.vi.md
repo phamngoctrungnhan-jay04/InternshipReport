@@ -5,55 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu Tuần 9:
+
+- Nghiên cứu sâu các kiến trúc mô hình Transformer: Scaled Dot-Product Attention, Masked Self-Attention và Decoder.
+- Thực hành triển khai và tối ưu Transformer-based summarizer; cải tiến ChatBot.
+- Thử nghiệm tích hợp với dịch vụ AWS Bedrock cho tác vụ AI.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - So sánh Transformers và RNNs <br> - Nghiên cứu Scaled Dot-Product Attention và Masked Self-Attention <br> - Tìm hiểu cấu trúc Transformer Decoder                                                                                            | 03/11/2025   | 03/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/>
+| 3   | - Thực hành lab về Transformer Summarizer <br> - Tối ưu ChatBot và hoàn thiện giao diện | 04/11/2025   | 04/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/> |
+| 4   | - Họp nhóm tối ưu hệ thống và điều chỉnh dịch vụ AWS <br> - Nghiên cứu Transfer Learning và các mô hình LLM (ELMo, GPT, BERT, T5) | 05/11/2025   | 05/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/> |
+| 5   | - Khám phá AWS Bedrock và thử nghiệm tích hợp ChatBot với Bedrock | 06/11/2025   | 06/11/2025      |  |
+| 6   | - Thu thập và chuẩn hóa dữ liệu cho ChatBot trên Bedrock <br> - Kiểm thử và sửa lỗi liên quan đến tương tác và hiệu năng                                                                                         | 07/11/2025   | 07/11/2025      |  |
 
 
-### Kết quả đạt được tuần 9:
+### Kết quả đạt được Tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Nâng cao hiểu biết về Transformer và các cơ chế Attention; áp dụng vào bài toán tóm tắt văn bản.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Cải thiện ChatBot về mặt hiệu năng và giao diện, tiến hành thử nghiệm tích hợp với Bedrock.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Thu thập dữ liệu huấn luyện cho ChatBot và thực hiện các vòng kiểm thử, sửa lỗi.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+...
 
 

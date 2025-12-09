@@ -5,55 +5,34 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 10:
+### Mục tiêu Tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Thấu hiểu kiến trúc BERT, kỹ thuật fine-tuning và chiến lược huấn luyện đa nhiệm (Multi-Task Training).
+- Hoàn thiện giao diện người dùng (UI) và tiến hành kiểm thử hệ thống toàn diện.
+- Tối ưu kiến trúc bằng cách chuyển hướng tích hợp AI sang mô hình serverless.
+- Triển khai tích hợp Frontend trực tiếp với Bedrock thông qua AWS Lambda.
+
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Nghiên cứu BERT và kỹ thuật fine-tuning <br> - Thực hành lab fine-tune BERT trên dữ liệu tùy chỉnh                                                                                         | 10/11/2025   | 10/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/>
+| 3   | - Hoàn thiện UI, triển khai các chức năng cốt lõi và tiến hành kiểm thử sản phẩm | 11/11/2025   | 11/11/2025      |  |
+| 4   | - Họp đánh giá tính năng, tối ưu hệ thống và lên kế hoạch triển khai tiếp theo <br> | 12/11/2025   | 12/11/2025      |  |
+| 5   | - Tối ưu hệ thống và xử lý các lỗi tích hợp liên quan đến Bedrock AI ChatBot | 13/11/2025   | 13/11/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Viết AWS Lambda để kết nối Frontend trực tiếp với Bedrock; nghiên cứu phương án tích hợp an toàn và hiệu quả                                                                                         | 14/11/2025   | 14/11/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Kết quả đạt được tuần 10:
+### Thành tựu Tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Nắm vững BERT và thực hành fine-tuning để cải thiện hiệu suất trên dữ liệu tùy chỉnh.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Hoàn thiện UI và hoàn tất kiểm thử hệ thống, xử lý các lỗi phát hiện.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Chuyển đổi tích hợp AI sang kiến trúc serverless và triển khai Lambda functions để kết nối Frontend với Bedrock.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Tối ưu hóa hiệu năng và khả năng mở rộng của hệ thống.
 
 

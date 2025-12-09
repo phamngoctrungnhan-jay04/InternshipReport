@@ -3,7 +3,7 @@ title : "VPC Endpoint Policies"
 date : "2025-11-05"
 weight : 5
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5 </b> "
 ---
 
 When you create an interface or gateway endpoint, you can attach an endpoint policy to it that controls access to the service to which you are connecting. A VPC endpoint policy is an IAM resource policy that you attach to an endpoint. If you do not attach a policy when you create an endpoint, AWS attaches a default policy for you that allows full access to the service through the endpoint.

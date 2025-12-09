@@ -3,7 +3,7 @@ title : "Clean up"
 date : "2025-11-05"
 weight : 6
 chapter : false
-pre : " <b> 5.6. </b> "
+pre : " <b> 5.6 </b> "
 ---
 Congratulations on completing this workshop! 
 In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 

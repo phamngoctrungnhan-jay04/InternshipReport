@@ -5,10 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
@@ -18,11 +14,11 @@ pre: " <b> 1.3. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tạo EC2 Instances trong Subnets <br> - Thực hành tạo Internet Gateway <br> - Tìm hiểu về Transit Gateway Route Tables <br> - Cài đặt Transit Gateway <br> - Kết nối EC2 Instance tới Endpoint                                                                                            | 22/09/2025   | 22/09/2025      | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://cloudjourney.awsstudygroup.com/>
+| 3   | - Tìm hiểu thêm về EC2 <br>&emsp; + AMI/ Backup/ Key pair <br>&emsp; + Elastic block store <br>&emsp; + Instances store <br>&emsp; + User data & meta data <br>&emsp; + EC2 auto scaling<br>                                            | 23/09/2025   | 23/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 4   | - Triển khai hạ tầng <br> - Tạo Backup plan <br> - Tiến hành kiếm thử khôi phục <br> - Dọn dẹp tài nguyên <br> - Tạo S3 Bucket | 24/09/2025   | 24/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 5   | - Tạo EC2 cho Storage Gateway <br> - Thực hành tạo thử 1 website tĩnh đơn giản <br> - Cấu hình public access block và public objects <br> - Tìm hiểu về AWS CloudFont và thực hành cấu hinh cho CloudFont                | 25/09/2025   | 25/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 6   | - Tìm hiểu Supervised ML & Sentiment Analysis <br> - Natural Language preprocessing <br> - Visualizing tweets and Logistic Regression models <br> - Meeting nhóm để lên ý tưởng cho dự án cuối kì                                                                                       | 26/09/2025   | 26/09/2025      | <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/> |
 
 
 ### Kết quả đạt được tuần 3:
