@@ -28,9 +28,11 @@ This workshop contains hands-on modules covering the end-to-end stack and best p
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
+1. [Workshop Overview](5.1-Workshop-overview)
 2. [Project Architecture](5.2-Project-Architecture/)
-3. [VPC of project](5.3-VPC/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+3. [VPC Of Project](5.3-VPC/)
+4. [Database And Storage](5.4-DatabaseAndStorage/)
+5. [Compute And Container](5.5-ComputeAndContainer/)
+6. [Create Load Balancing](5.6-CreateALB/)
+7. [Create Amplify And API Gateway](5.7-AmplifyAndAPIGateway/)
+8. [Intruct Deploy Code Frontend and Backend](5.8-Instruct-deploy-be-fe/)

@@ -1,40 +1,36 @@
 ---
-title : "Tạo một Gateway Endpoint"
+title : "Tạo Route Table và Internet Gateway"
 date :  "2025-11-05" 
 weight : 1
 chapter : false
 pre : " <b> 5.3.1 </b> "
 ---
-
-1. Mở [Amazon VPC console](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
-2. Trong thanh điều hướng, chọn **Endpoints**, click **Create Endpoint**:
-
 {{% notice note %}}
-Bạn sẽ thấy 6 điểm cuối VPC hiện có hỗ trợ AWS Systems Manager (SSM). Các điểm cuối này được Mẫu CloudFormation triển khai tự động cho workshop này.
+Route Table là một tập hợp các quy tắc (routes) được router sử dụng để xác định đường đi tốt nhất cho các gói dữ liệu tới đích.
 {{% /notice %}}
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/endpoints.png)
-
-3. Trong Create endpoint console:
-+ Đặt tên cho endpoint: s3-gwe
-+ Trong service category, chọn **aws services**
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/create-s3-gwe1.png)
-
-+ Trong **Services**, gõ "s3" trong hộp tìm kiếm và chọn dịch vụ với loại **gateway**
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/services.png)
-
-+ Đối với VPC, chọn **VPC Cloud** từ drop-down menu.
-+ Đối với Route tables, chọn bảng định tuyến mà đã liên kết với 2 subnets (lưu ý: đây không phải là bảng định tuyến chính cho VPC mà là bảng định tuyến thứ hai do CloudFormation tạo).
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/vpc.png)
-
-+ Đối với Policy, để tùy chọn mặc định là Full access để cho phép toàn quyền truy cập vào dịch vụ. Bạn sẽ triển khai VPC endpoint policy trong phần sau để chứng minh việc hạn chế quyền truy cập vào S3 bucket dựa trên các policies.
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/policy.png)
-
-+ Không thêm tag vào VPC endpoint.
-+ Click Create endpoint, click x sau khi nhận được thông báo tạo thành công.
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/complete.png)
+1. Mở [Amazon VPC console](https://ap-southeast-1.console.aws.amazon.com/vpcconsole/home?region=ap-southeast-1#Home:)
+2. Chọn **Route tables**, sau đó nhấp **Create route table**
+![endpoint](/images/VPC/route1.png)
+3. Trong màn hình Create route table:
+   1. Nhập tên cho Route table
+   2. Chọn VPC đã tạo
+   3. Sau đó nhấp **Create route table**
+![endpoint](/images/VPC/route2.png)
+4. Trong bảng Route table, nhấp vào Route table vừa tạo
+![endpoint](/images/VPC/route3.png)
+5. Chọn **Routes** ở thanh điều hướng -> nhấp **Edit routes**
+![endpoint](/images/VPC/route4.png)
+6. Ở màn hình Edit routes -> chọn Target là `local` -> **Save changes**
+![endpoint](/images/VPC/route5.png)
+7. Chọn **Internet Gateway** trên thanh điều hướng bên trái -> nhấp **Create internet gateway**
+![endpoint](/images/VPC/igw1.png)
+8. Trong Create Internet Gateway:
+   - Nhập tên cho Internet Gateway
+   - Nhấp **Create internet gateway**
+![endpoint](/images/VPC/igw2.png)
+9. Quay lại Route table -> Thực hiện tạo route table giống bước 3
+   - Chọn Route table này -> Edit routes
+   - Ở Target chọn Internet Gateway vừa tạo
+   - Sau đó nhấp **Save changes**
+![endpoint](/images/VPC/igw3.png)

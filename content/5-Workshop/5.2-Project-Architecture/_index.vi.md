@@ -1,242 +1,44 @@
 ---
-title : "Các bước chuẩn bị"
+title : "Kiến trúc Dự án"
 date :  "2025-11-05" 
-weight : 2
+weight : 2 
 chapter : false
 pre : " <b> 5.2 </b> "
 ---
+ 
+#### Tổng quan Kiến trúc
 
-#### IAM permissions
-Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+Tài liệu này mô tả kiến trúc sản xuất đề xuất cho ReGenZet — hệ thống quản lý gara xe điện — và giải thích các lựa chọn công nghệ được sử dụng trong workshop.
 
-```
+- **Frontend:** Ứng dụng React SPA được triển khai và host trên **AWS Amplify** (CI/CD tự động, hosting tài nguyên và tích hợp CloudFront để cache toàn cầu và phân phối nhanh).
+- **Backend:** Dịch vụ Spring Boot đóng gói dưới dạng Docker image và chạy trên **Amazon ECS (Fargate)**. Fargate loại bỏ gánh nặng quản lý host và cung cấp compute serverless có khả năng scale cho microservices.
+- **Cơ sở dữ liệu:** **Amazon RDS (MySQL/Postgres)** đặt trong private subnets. RDS cung cấp backup tự động, snapshot, tùy chọn Multi-AZ và mã hóa khi lưu (KMS).
+- **Quản lý API:** **Amazon API Gateway** làm điểm vào HTTPS duy nhất cho traffic client, xử lý routing, TLS termination và throttling.
+- **Lưu trữ media:** **Amazon S3** lưu ảnh/ video kiểm tra xe và các media khác. Sử dụng presigned URLs để upload/download trực tiếp an toàn, giảm tải cho backend.
+- **Thành phần bất đồng bộ / Serverless:**
+  - Pipeline email: Backend (Spring) publish event đến **SNS**, kích hoạt **Lambda** gửi email qua **Amazon SES**.
+  - Pipeline AI/Chat: Frontend → API Gateway → Lambda → **Amazon Bedrock** (hoặc LLM quản lý khác) cho inference và workflow hội thoại.
+- **Mạng & Bảo mật:** Triển khai tài nguyên trong VPC với Public/Private subnets rõ ràng. Dùng **Security Groups** và **NACLs** để kiểm soát lưu lượng. Dùng **VPC Endpoints** (Gateway & Interface) cho S3 và truy cập dịch vụ riêng tư, giữ traffic bên trong mạng AWS.
 
-#### Khởi tạo tài nguyên bằng CloudFormation
+#### Tại sao chọn kiến trúc này?
 
-Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
+An ninh là ưu tiên
+- Backend và RDS nằm trong private subnet và không mở port database ra Internet công cộng. API Gateway và frontend có load balancer terminate TLS ở edge, trong khi các dịch vụ nội bộ giao tiếp qua mạng riêng.
 
-Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Để nguyên các lựa chọn mặc định.
+Tối ưu chi phí
+- Fargate và Lambda cung cấp mô hình trả theo sử dụng. Khi phù hợp, cân nhắc Fargate Spot cho workloads không quan trọng và thiết lập autoscaling cùng lifecycle policies cho S3 để giảm chi phí.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+Đơn giản vận hành & mô hình hiện đại
+- Tách biệt rõ frontend/backend với API Gateway làm ingress duy nhất. Thành phần event-driven (SNS, Lambda) tách rời xử lý email/AI khỏi luồng request-response, cải thiện tính chịu lỗi và khả năng scale.
 
-+ Lựa chọn 2 mục acknowledgement 
-+ Chọn Create stack
+Nâng cao năng suất phát triển
+- AWS Amplify đơn giản hóa CI/CD và hosting frontend. Quy trình container với Docker + ECR và ECS Fargate cho phép deploy lặp lại và dễ tái hiện cho backend.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+Các điểm bảo mật & best-practice
+- IAM theo nguyên tắc least-privilege cho các service và cross-account khi cần.
+- Mã hóa do KMS quản lý cho RDS và đối tượng S3.
+- Sử dụng WAF và rate-limiting trên API Gateway để giảm thiểu các cuộc tấn công ứng dụng.
 
-Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.
+Kiến trúc này cân bằng giữa bảo mật cấp doanh nghiệp và mô hình serverless tối ưu chi phí, đồng thời cung cấp lộ trình thực tế để áp dụng dần các tính năng nâng cao (observability, DR đa vùng, AI dựa trên Bedrock).
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
-
-+ 2 VPCs đã được tạo
-
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
-
-+ 3 EC2s đã được tạo
-
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+![overview](/images/aws_architecture-finish.drawio.png)

@@ -39,7 +39,7 @@ pre : " <b> 5.3.4 </b> "
       - Choose endpoint-sg
       - Click **Create endpoint**
 ![endpoint](/images/Endpoints/e5.png)
-   1. VPC Enpoint Logs
+   4. VPC Enpoint AWS SNS
       - In search box -> com.amazonaws.ap-southeast-1.sns
       - Choose com.amazonaws.ap-southeast-1.sns
       - Choose VPC created

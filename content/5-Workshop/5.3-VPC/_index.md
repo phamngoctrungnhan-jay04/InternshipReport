@@ -26,3 +26,4 @@ pre : " <b> 5.3 </b> "
 - [Create Route Table & Internet Gateway](3.1-create-route-table/)
 - [Create Subnets](3.2-create-subnets/)
 - [Create Security Groups](3.3-create-security-groups/)
+- [Create VPC Endpoints](3.3-create-vpc-endpoints/)
