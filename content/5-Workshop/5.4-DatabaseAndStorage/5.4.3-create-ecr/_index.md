@@ -1,5 +1,5 @@
 ---
-title : "Test the Interface Endpoint"
+title : "Create AWS ECR"
 date : "2025-11-05"
 weight : 3
 chapter : false

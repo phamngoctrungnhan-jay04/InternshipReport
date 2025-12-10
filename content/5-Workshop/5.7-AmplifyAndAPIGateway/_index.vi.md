@@ -1,5 +1,5 @@
 ---
-title : "Dọn dẹp"
+title : "Tạo Amplify và API Gateway"
 date : "2025-11-05"
 weight : 6
 chapter : false

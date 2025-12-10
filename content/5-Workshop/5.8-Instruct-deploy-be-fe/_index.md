@@ -1,5 +1,5 @@
 ---
-title : "Clean up"
+title : "Instruct Deploy BackEnd And Frontend"
 date : "2025-11-05"
 weight : 6
 chapter : false

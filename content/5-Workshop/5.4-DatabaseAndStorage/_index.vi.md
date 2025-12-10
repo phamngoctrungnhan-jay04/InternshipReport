@@ -1,5 +1,5 @@
 ---
-title : "Truy cập S3 từ on-premises"
+title : "Cơ sở dữ liệu và lưu trữ"
 date : "2025-11-05"
 weight : 4
 chapter : false

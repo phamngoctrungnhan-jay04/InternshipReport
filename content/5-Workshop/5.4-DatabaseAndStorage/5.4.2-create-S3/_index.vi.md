@@ -1,5 +1,5 @@
 ---
-title : "Tạo S3"
+title : "Tạo AWS S3"
 date : "2025-11-05"
 weight : 2
 chapter : false
