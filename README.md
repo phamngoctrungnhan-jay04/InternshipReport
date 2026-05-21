@@ -32,5 +32,5 @@ During the OJT program, I served as the Lead Architect and Backend Developer for
 - `/content` - Detailed weekly reports and internship documentation
 - `/static` - Architectural diagrams and system design assets
 - `config.toml` - Hugo static site configuration for report deployment
-# fcj-proposal_demo2
 # InternshipReport
+# fcja-proposal
